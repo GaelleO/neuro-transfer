@@ -48,15 +48,15 @@ To do so we create 2 loss functions that we will combine later on :
 
   For both, we extract one of the last layer of the neural network (in our case, it is a 19 layers nnet, 16 convolutional layers dedicated to adjust patterns, and 3 final layers to build the image : the current code extract 18th layer).   
   This layer gives us <u>a numerical representation of the input picture</u>.   
-If we apply it on both our face picture and a random noise picture, we get to numerical representation.  
-To make the picture looks similar, we need to minimize the distance between the 2 numerical representations.   
+If we apply it on both our face picture + a random noise picture, we get 2 numerical representations.  
+To make the pictures looks similar, we need to minimize the distance between these 2 numerical representations.   
 Here is our **1st loss function**
 <br><br>   
 2. **Step1b** : We also need to create a numerical representation of the painting style.  
-To do so, we use one of the 16 convolutionnal layers of the neural network applied on the painting.   
+To do so, we use one of the 16 convolutional layers of the neural network applied on the painting.   
 <br>
-How does a convolutionnal layer look like ? It looks like a set of nodes, each node dedicated to recognize a "part" of the input image (a pattern). <i>For instance, a node can be good at detecting eyes, or skin, etc...</i>  
-Choosing the layer is arbitrary. It can be optimized (it's an hyperparameter of the model). In the cirrent code, we used the 13th layer.
+How does a convolutionnal layer look like ? It looks like a set of nodes, each node dedicated to a certain task, in our case recognizing a "part" of the input image (a pattern). <i>For instance, a node can be good at detecting strong circle hue gradient (and detect well eyes), etc...</i>  
+Choosing the layer is arbitrary. It can be optimized (as an hyperparameter of the model). In the current code, we used the 13th layer.
 <br>
 The idea here is to find the style of the painting, regardless of **<i>what</i>** is represented.  
 To do so, we calculate the correlations between the nodes : it will <u>"normalize the subject of the painting"</u>, and - hence - only keep the style (which is supposed to be the same for the whole painting !).  
