@@ -63,6 +63,4 @@ Run your docker
 </tr>
 </table>
 
-## 6. How does it work : 
 
-- the pre trained model is a face-recognition model. It has been trained 
