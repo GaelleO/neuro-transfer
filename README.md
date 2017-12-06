@@ -71,6 +71,8 @@ Again, the idea will be to minimize the distance between those 2 matrix, to ensu
 
 ##That's it !
 
+Note that we could have used another pre trained neural network detecting landscape or object, to avoid focusing on faces. 
+
 ---
   
 # Installation and launch
