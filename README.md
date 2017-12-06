@@ -1,8 +1,9 @@
 # neuro-transfer
 
-<u>Contents</u> : Play with Python and deep learning capabilities to style your photo.  
+<u>Contents</u> : For Data(Science)-addict and python curious ! Play with Python and deep learning capabilities to style your photo.   
+
 Several implementation of this kind of code already exist. See for instance [this one](https://github.com/anishathalye/neural-style#requirements).  
-This one is another attempt to have fun with neural network capabilities and embrace the wide data-field of what is possible.
+This repo is another attempt to have fun with neural network capabilities and embrace the wide data-field of what is possible !!
 
 # Which output can you expect from this : 
 
@@ -27,13 +28,13 @@ This one is another attempt to have fun with neural network capabilities and emb
 </tr>
 </table>
 
-# How does it work : 
+# Curious to understand how it works ? Here we go :  
 
 Let's consider our 2 pictures as 300x400 matrix of Red/Green/Blue vectors
 
 Our 2 main goals are :
 
-1. we want to create an image which looks like our face picture
+1. we want to create an image which looks like our face picture (it could be fun for placing people around the christmas table :) )
 2. we want the global style and arrangement of pixels of colors looks like the painting style
 
 To do so we create 2 loss functions that we will combine later on : 
@@ -65,11 +66,13 @@ Again, the idea will be to minimize the distance between those 2 matrix, to ensu
 <br>
 <br>
 
-<center><font size="8" color=#43bdea>HAVE FUN !</font></center>
-<br>
+##That's it !
 
-<hr>
+---
+  
 # Installation and launch
+
+<i>Note : see issues and branches to follow latest updates</i>
 
 ## 1. Install python
 
@@ -101,7 +104,7 @@ import numpy as np
 import tensorflow as tf
 ```
 
-Not that to use PIL you should open the console in pycharm and install Pillow : 
+Note that to use PIL you should open the console in pycharm and install Pillow : 
 
 ```pip install Pillow```
 
