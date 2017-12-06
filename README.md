@@ -1,3 +1,6 @@
+<i>Copyright: http://deeplearning.ai (https://www.deeplearning.ai);
+All the codes are modified from the assignment code by deeplearning.ai in the Coursera Deep Learning Specialization: Convolutional Neural Networks Week 4 (https://www.coursera.org/specializations/deep-learning). Please push an issue for any change you may want</i>
+
 # Neuro-transfer : Play with Python and deep learning to style your photo.
 
 For Data(Science)-addict and python curious ! **Sky is the limit**
@@ -55,8 +58,8 @@ Here is our **1st loss function**
 2. **Step1b** : We also need to create a numerical representation of the painting style.  
 To do so, we use one of the 16 convolutional layers of the neural network applied on the painting.   
 <br>
-How does a convolutionnal layer look like ? It looks like a set of nodes, each node dedicated to a certain task, in our case recognizing a "part" of the input image (a pattern). <i>For instance, a node can be good at detecting strong circle hue gradient (and detect well eyes), etc...</i>  
-Choosing the layer is arbitrary. It can be optimized (as an hyperparameter of the model). In the current code, we used the 13th layer.
+How does a convolutionnal layer look like ? It looks like a set of filters, each filter dedicated to a certain task, in our case recognizing a "part" of the input image (a pattern). <i>For instance, a filter can be good at detecting strong circle hue gradient (and detect well eyes), etc...</i>  
+Choosing the layer is arbitrary. It can be optimized (as an hyperparameter of the model). In the current code, we used the 5 iso-weighted layers.
 <br>
 The idea here is to find the style of the painting, regardless of **<i>what</i>** is represented.  
 To do so, we calculate the correlations between the nodes : it will <u>"normalize the subject of the painting"</u>, and - hence - only keep the style (which is supposed to be the same for the whole painting !).  
