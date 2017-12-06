@@ -20,18 +20,16 @@ import tensorflow as tf
 
 
 ##load the picture
-
-
-content_image = scipy.misc.imread("images/nuria_picas_UTMB2017.png")
+content_image = scipy.misc.imread("images/nuria_picas.png")
 content_image = reshape_and_normalize_image(content_image)
 
 ##load the style
-style_image = scipy.misc.imread("images/van.jpg")
+style_image = scipy.misc.imread("images/picasso.png")
 style_image = reshape_and_normalize_image(style_image)
 
 ##generate noise
 generated_image = generate_noise_image(content_image)
-imshow(generated_image[0])
+#imshow(generated_image[0])
 
 
 # GRADED FUNCTION: compute_content_cost
