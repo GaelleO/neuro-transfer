@@ -1,9 +1,12 @@
-# neuro-transfer
+# Neuro-transfer : Play with Python and deep learning to style your photo.
 
-<u>Contents</u> : For Data(Science)-addict and python curious ! Play with Python and deep learning capabilities to style your photo.   
+For Data(Science)-addict and python curious ! **Sky is the limit**
 
+
+   
+<u>Notes</u>
 Several implementation of this kind of code already exist. See for instance [this one](https://github.com/anishathalye/neural-style#requirements).  
-This repo is another attempt to have fun with neural network capabilities and embrace the wide data-field of what is possible !!
+This repo is just another attempt to have fun with data science and embrace the wide data-field of what is possible !
 
 # Which output can you expect from this : 
 
